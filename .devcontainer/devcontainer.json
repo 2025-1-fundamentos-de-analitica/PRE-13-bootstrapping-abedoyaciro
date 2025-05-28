@@ -9,7 +9,11 @@
         "ghcr.io/devcontainers/features/common-utils:2": {},
 
         // For handling large files in Git (e.g., datasets, ML models)
-        "ghcr.io/devcontainers/features/git-lfs:1": {}
+        "ghcr.io/devcontainers/features/git-lfs:1": {},
+
+		// Ensures a comprehensive Jupyter setup (JupyterLab, Notebook, ipywidgets, etc.)
+        // Good even if the base image has Python, as it might add more Jupyter components.
+        "ghcr.io/devcontainers/features/jupyter:1": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -34,7 +38,9 @@
 				"ms-toolsai.vscode-jupyter-cell-tags",
 				"ms-toolsai.jupyter-renderers",
 				"ms-toolsai.vscode-jupyter-slideshow",
-				"DavidAnson.vscode-markdownlint"
+				"DavidAnson.vscode-markdownlint",
+				"mechatroner.rainbow-csv",
+				"ms-python.pylint"
 			],
             "settings": {
                 // Settings for VS Code that you want applied in the Codespace
